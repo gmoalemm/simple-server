@@ -1,6 +1,7 @@
 from server import Server
 from MenuGenerator import MenuGenerator
 import torch
+import os
 
 MODEL_PATH = "model_weights.pth"
 
@@ -16,4 +17,5 @@ if __name__ == "__main__":
 
     # Run the server
     print("Starting server...")
-    server.run()
+    port = int(os.environ.get('PORT', 5000))
+    server.run(port=port)
