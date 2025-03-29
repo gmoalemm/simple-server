@@ -1,4 +1,11 @@
-from .Server import Server
+import os
+import sys
+
+print("Current working directory:", os.getcwd())
+print("Python path:", sys.path)
+print("Files in working directory:", os.listdir("."))
+
+from Server import Server
 # from MenuGenerator import MenuGenerator
 # import torch
 
