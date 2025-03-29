@@ -1,4 +1,4 @@
-from Server import Server
+from .Server import Server
 # from MenuGenerator import MenuGenerator
 # import torch
 
