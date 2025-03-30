@@ -31,7 +31,7 @@ class Server:
                 }
             })
 
-        @self.app.route("/predict", methods=["GET"])
+        @self.app.route("/predict", methods=["POST"])
         def predict():
             data = request.json
 
