@@ -43,4 +43,4 @@ class Server:
             return jsonify({"output": merged_pred.tolist()})
 
     def run(self, host="0.0.0.0", port=5000):
-        self.app.run()(host=host, port=port, debug=True)
+        self.app.run(host=host, port=port, debug=False)
